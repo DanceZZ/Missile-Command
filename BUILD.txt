@@ -1,0 +1,27 @@
+Missile Command Build Instructions
+----------------------------------
+
+
+Requirements
+------------
+
+Missile Command requires Java 5.
+
+Missile Command is built using Maven 2; specifically version 2.0.9.  Therefore, Maven 2 is pre-requisite
+of the build and development processes.  Currently, Missile Command has dependencies on log4j and junit, both of
+which can be retrieved from standard repositories with no need to modify local settings.xml.
+
+
+Instructions
+------------
+
+1. change to the top level directory (the one containing pom.xml)
+2. execute: mvn clean
+3. execute: mvn assembly:assembly
+
+This will create a directory called 'target' in which will be created the file
+'missile-command-1.0-jar-with-dependencies.jar'.
+
+To run the game:
+
+1. execute: java -jar target/missile-command-1.0-jar-with-dependencies.jar 

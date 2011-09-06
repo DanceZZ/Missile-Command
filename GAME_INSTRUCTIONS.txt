@@ -1,0 +1,47 @@
+Missile Command Game Instructions
+---------------------------------
+
+The game is started by executing the command:
+
+    java -jar missile-command-1.0-jar-with-dependencies.jar
+
+If the game is not being executed from the directory in which the missile command jar resides, the location
+of the jar file must prefixed to the jar file name in the above command, e.g.
+
+    java -jar target/missile-command-1.0-jar-with-dependencies.jar
+
+
+Initial Screen
+--------------
+When the game starts the player will initially be presented with an empty game area, i.e. showing
+only the player's cities (gray squares) and missile bases (white triangles) along the bottom of the screen.
+
+
+Gameplay
+--------
+The player must defend these areas from incoming missiles.  These missiles will move from the top of the screen
+toward the bottom, targeting one of the player's cities or missile bases.
+
+Enemy missiles can be destroyed by missiles fired from one of the player's three missile bases.  To fire missiles, the
+player moves his mouse to the point on the game area he wishes his missile to detonate, then fires a missile using
+one of the following three keys:
+
+'a' - missile base on the left of the screen
+'s' - missile base in the centre of the screen
+'d' - missile base on the right of the screen
+
+Missile bases start each level with 20 missiles.  When a missile base has fired all 20 missiles (or has been destroyed) it will
+no longer respond to the keys detailed above.
+
+If the player manages to destroy all incoming missiles before all six cities are destroyed, he will proceed to the next level. At
+the start of each level, the player's missile bases are restored to full capacity, however any cities destroyed in the previous
+level are not restored.  Each level is progressively more difficult than the previous one.
+
+When all six cities are destroyed the player's game is over.
+
+
+Start/Stop the Game
+-------------------
+To start/restart the game, the player should press the spacebar.
+
+To end the game, the player should close the main window.
